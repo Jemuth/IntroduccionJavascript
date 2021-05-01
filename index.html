@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" as="style">
+    <link rel="shortcut icon" href="#">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="header__texto">Javascript Intro</h1>
+    </div>
+    <main class="main_contenedor">
+        <div class="main_caja1">
+            <h2>Ejemplo de evento .onclick</h2>
+            <p>Hacer click en el boton para generar una frase.</p>
+            <button id="boton" type="submit">Haz Click</button>
+            <textarea name="mensaje1" placeholder="Haz click en el boton para generar una frase..." id="cajatexto"
+                cols="30" rows="10"></textarea>
+        </div>
+        <div class="main_caja2" id="maincaja2">
+            <h2 id="hcaja">Combinando propiedades .onclick</h2>
+            <p>Selecciona colores a combinar:</p>
+            <div class="label1">
+                <label class="main_caja2--label" for="colorventana">Selecciona un color:</label>
+
+                <select class="select__texto id=" colorventana">
+
+                    <option selected="selected" disabled>Selecciona un color...</option>
+                    <option id="opcionrojo" value="rojo">Rojo</option>
+                    <option id="opcionazul" value="azul">Azul</option>
+                    <option id="opcionverde" value="verde">Verde</option>
+                    <option id="opcionamarillo" value="amarillo">Amarillo</option>
+
+                </select>
+            </div>
+            <div class="label2">
+                <label class="main_caja2--label" for="colorventana">Selecciona otro color:</label>
+
+                <select class="select__texto id=" colorventana">
+
+                    <option selected="selected" disabled>Selecciona otro color...</option>
+                    <option id="opcionrojo2" value="rojo">Rojo</option>
+                    <option id="opcionazul2" value="azul">Azul</option>
+                    <option id="opcionverde2" value="verde">Verde</option>
+                    <option id="opcionamarillo2" value="amarillo">Amarillo</option>
+
+                </select>
+            </div>
+            <div id="cajacolor">
+                <div id="cajacolor2"></div>
+            </div>
+            <p>Selecciona un botón: </p>
+            <div class="botonescambio">
+                <button id="cambiofondo" type="submit">Cambia el color de fondo</button>
+                <button id="cambiotexto" type="submit">Cambiar el color de texto</button>
+            </div>
+
+
+        </div>
+    </main>
+
+    <script type="module" src="js/scripts.js"></script>
+    <script type="module" src="js/frases.js"></script>
+</body>
+
+</html>
